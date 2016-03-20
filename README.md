@@ -1,3 +1,4 @@
+You must state the width and height int the xml
 <com.miko.zd.gitchangecolorbitmap.ChangeColorIconWithText
         android:id="@+id/btm_second"
         android:layout_width="100dp"
