@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:miko="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <com.miko.zd.gitchangecolorbitmap.ChangeColorIconWithText
+        android:id="@+id/btm_first"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        miko:Color="@color/colorBlue"
+        miko:Icon="@drawable/ic_menu_allfriends"
+        miko:text="first bitmap"
+        miko:text_size="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btm_first"
+        android:text="touch first bt to change"
+        android:paddingTop="40dp"/>
+
+    <com.miko.zd.gitchangecolorbitmap.ChangeColorIconWithText
+        android:id="@+id/btm_second"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/btm_first"
+        miko:Color="@color/colorBlueGreen"
+        miko:Icon="@drawable/ic_menu_allfriends"
+        miko:text="second bitmap"
+        miko:text_size="18sp" />
+
+    <Button
+        android:id="@+id/bttotp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btm_second"
+        android:text="set second bm to transport" />
+
+    <Button
+        android:id="@+id/bttoop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bttotp"
+        android:text="set second bm to transport" />
+
+</RelativeLayout>
